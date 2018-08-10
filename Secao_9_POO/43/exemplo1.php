@@ -2,7 +2,8 @@
 /*
 Neste exemplo vemos como usamos metodos estaticos, diferente dos normais, eles são acessados 
 através de :: e não de -> e tem a palavra static reservada antes do nome, podem ser acessados sem 
-criamos a instância da classe também
+criamos a instância da classe também, recebem como parametro (nesse caso, é claro) o valor da variavel 
+que deve passar por ele
 */
 class Documento{
 	private $numero;

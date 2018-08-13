@@ -1,5 +1,9 @@
 <?php 	
-
+/*
+Aqui podemos ver um exemplo de herança acessando metódos publicos mesmo com a classe privada.
+Neste caso ele obtem acesso, mas como podem ver se descomentarem a linha 37 ele não acessa o 
+atributo private pois ele não pode ser herdado por uma classe filho, apenas public e protected.
+*/
 class Pessoa{
 
 	public $nome = "Rasmus Lerdorf";
@@ -31,7 +35,7 @@ class Programador extends Pessoa{
 
 $guri = new Programador;
 
-// echo $guri->nome;
+// echo $guri->senha;
 echo $guri->verDados();
 
 ?>

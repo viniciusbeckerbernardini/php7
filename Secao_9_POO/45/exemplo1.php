@@ -1,7 +1,8 @@
 <?php 	
 /*
-Encapsulamentos
-Níveis : 
+Nesse exemplo iremos estudar os encapsulamentos, os encapsulamentos servem para dar
+mais segurança ao seu código de uma maneira geral e determinar quem pode acessar determinado 
+atributo ou função, existem 3 níveis de encapsulamento, são eles: 
 Público - geral tem acesso (classe,objetos, classes extendidas)
 Protected - A classe e a classe extendida tem acesso
 Private - geral tem acesso 

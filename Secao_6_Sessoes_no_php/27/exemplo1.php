@@ -17,4 +17,4 @@ switch(session_status()){
   case 2:
   echo "PHP_SESSION_ACTIVE";
 }
- ?>
+?>

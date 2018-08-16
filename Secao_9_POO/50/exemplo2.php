@@ -1,7 +1,7 @@
 <?php 	
 /*
 Nesse exemplo iremos falar sobre inclusão de arquivos utilizando autoload e as 
-spl functions, para que serve o autoload? o autoload serve para que possamos incluir arquivos que estejam em outra pasta de forma dinamica como mostra o exemplo abaixo em que ao instancia a classe Belina (que se extende da classe automovel) ele busca a classe automovel também fazendo com que tudo funcione lindamente meu galinho véio rinho de briga
+spl functions, para que serve o autoload? o autoload serve para que possamos incluir arquivos que estejam em outra pasta de forma dinamica sem precisarmos fazer um require para cada arquivo que formos usar, esse tipo de requisição funciona de forma dinamica então se houverem outras instâncias nas classes que foram invocadas ele também o fará como mostra o exemplo abaixo em que ao instancia a classe Belina, a classe belina por sua vez se extende de Veiculo que também é chamado dinâmicamente através da spl function de autoload
 */
 function incluirClasses($nomeClasse){
 	if(file_exists("$nomeClasse.class.php") === true){

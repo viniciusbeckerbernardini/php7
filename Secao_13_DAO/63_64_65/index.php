@@ -5,6 +5,7 @@ require_once('config.php');
 $user = new Usuario();
 
 // Acessando o método que retorna o usuário pelo ID
+echo '<h2>PROCURANDO PELO ID</h2>';
 $user->loadById(3);
 // Imprimindo o metódo __toString() na tela
 echo $user;
@@ -16,6 +17,7 @@ Função retorna a lista de usuários do banco de dados
 */
 $list = Usuario::listGenerator();
 // Imprimindo um json com o resultado
+echo '<h2>PROCURANDO TUDO</h2>';
 echo json_encode($list);
 echo '<hr>';
 
@@ -25,6 +27,7 @@ Função retorna usuários que que combinem com pesquisa que é informada via pa
 */
 $listByName = Usuario::searchByName('r');
 // Imprimindo um json com resultado
+echo '<h2>PROCURANDO PELO NOME</h2>';
 echo json_encode($listByName);
 echo '<hr>';
 
@@ -35,6 +38,7 @@ os dados login e senha são passados como primeiro e segundo parâmetro respecti
 */
 $user->login("Ratao","164864");
 // Retornando o valor usando o método __toString()
+echo '<h2>LOGIN</h2>';
 echo $user;
 echo '<hr>';
 
@@ -49,5 +53,20 @@ banco de dados
 */
 $user->insert();
 // Retornando o resultado usando o método __toString()
+echo '<h2>INSERT</h2>';
 echo $user;
+echo '<hr>';
+/*
+Utilizando a função update em conjunto com a loadByID
+*/
+$user->loadById(27);
+$user->update("Javarimba","Coritera");
+echo '<h2>UPDATE</h2>';
+echo $user;
+echo '<hr>';
+$user->loadById(27);
+$user->delete();
+echo '<h2>DELETE</h2>';
+echo $user;
+echo '<hr>';
  ?>

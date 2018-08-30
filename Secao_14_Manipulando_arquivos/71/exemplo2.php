@@ -1,5 +1,7 @@
 <?php 	
-
+/*
+Neste exemplo iremos falar sobre arquivos com base64
+*/
 $filename = "logo.png";
 
 $base64 = base64_encode(file_get_contents($filename));

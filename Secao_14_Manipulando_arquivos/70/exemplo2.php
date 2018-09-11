@@ -1,5 +1,5 @@
 <?php 
-
+// 
 if (!is_dir("images")){
 	mkdir("images");
 }

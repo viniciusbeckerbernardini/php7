@@ -1,0 +1,15 @@
+{
+    "name": "vbkji/84",
+    "description": "Teste",
+    "type": "project",
+    "authors": [
+        {
+            "name": "viniciusbeckerbernardini",
+            "email": "vbkmma@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}

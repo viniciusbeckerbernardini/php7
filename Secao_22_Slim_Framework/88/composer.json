@@ -1,0 +1,12 @@
+{
+    "name": "vbkji/secao_22_slim_framework",
+    "require": {
+        "slim/slim": "2"
+    },
+    "authors": [
+        {
+            "name": "viniciusbeckerbernardini",
+            "email": "vbkmma@gmail.com"
+        }
+    ]
+}
